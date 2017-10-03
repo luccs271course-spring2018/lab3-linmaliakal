@@ -23,7 +23,8 @@ elements in the list that were after where the _'5's_ were located move forward 
 
 __TestPerformance__
 - Which of the two lists performs better as the size increases?  
-
+When the size increases, Lists perform faster as it takes the LinkedList longer to 
+execute and be tested. 
 
 Link to testing data on Google Sheets:  
 https://docs.google.com/spreadsheets/d/1DXZykRYbJdBBi889wSGraDQ3FjDCs2Y8PNrZ59n_9Zc/edit?usp=sharing
