@@ -72,3 +72,5 @@ public class TestPerformance {
     }
   }
 }
+//use google spreadsheets, size horizon, test vertical, addRemoveArrayList, addRemoveLinkedList, etc
+//look at test results under build, reports, index.html
