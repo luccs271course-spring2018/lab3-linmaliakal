@@ -18,7 +18,8 @@ public class TestList {
   @Before
   public void setUp() throws Exception {
     list = new ArrayList<Integer>();
-    // TODO also try with a LinkedList - does it make any difference?
+    // DONE also try with a LinkedList - does it make any difference?
+    // list = new LinkedList<Integer>();
   }
 
   @After
@@ -49,7 +50,7 @@ public class TestList {
   @Test
   public void testContains() {
     // DONE write assertions using list.contains(77) that hold before and after adding 77 to the list
-    //assertFalse(list.contains(77));
+    // assertFalse(list.contains(77)); works if import assertFalse
     assertEquals(false, list.contains(77));
     list.add(77);
     assertTrue(list.contains(77));
@@ -124,7 +125,8 @@ public class TestList {
     // 2) assert that list does not contain all of 11, 22, and 33
     assertTrue(list.containsAll(Arrays.asList(33, 77, 44, 77, 55, 77, 66)));
     assertEquals(false, list.containsAll(Arrays.asList(11, 22, 33)));
-    //assertFalse(list.containsAll(Arrays.asList(11, 22, 33)));
+    // assertFalse(list.containsAll(Arrays.asList(11, 22, 33))); 
+    // works if import assertFalse
     // fail("Not yet implemented"); // remove this line when done
   }
 
