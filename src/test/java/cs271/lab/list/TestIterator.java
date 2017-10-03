@@ -6,6 +6,7 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import org.junit.After;
@@ -76,14 +77,15 @@ public class TestIterator {
     while (i.hasNext()) {
       if (i.next() == 77) {
         i.remove(); // DONE what happens if you use list.remove(77)?
-        
       }
-      //list.remove(77); 
     }
+    //list.remove(77);
+    
     // DONE using assertEquals and Arrays.asList, express which values are left in the list
     // See TestList.java for examples of how to use Arrays.asList; also see the Java Arrays
     // class for more information
-    list.assertEquals(Arrays.asList(33, 44, 55, 66));
+    assertEquals(4, list.size());
+    assertEquals(Arrays.asList(33, 44, 55, 66), list);
     //fail("Not yet implemented"); // remove this line when done
   }
 
